@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background: #004c99; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { padding: 20px; max-width: 1000px; margin: auto; }
+        .highlights { display: flex; gap: 20px; margin-top: 20px; }
+        .card { border: 1px solid #ddd; padding: 15px; flex: 1; border-radius: 5px; }
+        footer { background: #003366; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        .logo { height: 60px; }
+    </style>
+</head>
+<body>
+     <header>
+       
+        
+        <img src="https://thf.bing.com/th/id/OIP.b9qDnFdM7DoD0pU4vVQSVAHaHa?o=7&cb=thfc1falcon2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="university logo width="150" height="150">
+        <h1>SARDAR BEANT SINGH STATE UNIVERSITY of Technology</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+<nav style="background:#003366; padding:15px;">
+  <ul style="list-style:none; display:flex; gap:25px; margin:0; padding:0;">
+    <li><a href="sbbsu.html" style="color: white; text-decoration:none; font-weight:600;">Home</a></li>
+    <li><a href="about.html" style="color:white; text-decoration:none;">About</a></li>
+    <li><a href="courses.html" style="color:white; text-decoration:none;">Courses</a></li>
+    <li><a href="contact.html" style="color:white; text-decoration:none;">Contact </a></li>
+    <li><a href="gallery.html" style="color:white; text-decoration:none;">Gallery</a></li>
+    <li><a href="faculty.html" style="color:white; text-decoration:none;">Faculty</a></li>
+  </ul>
+</nav>
+    <form action="http://localhost:2000" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+        <label for="name">name</label>
+        <input id="name" name="" value="" type="text" placeholder="enter your name" minlength="3" maxlength="12" ><br><br>
+         <label for="email">email</label>
+        <input id="email" name="" value="" type="email" placeholder="enter your email" ><br><br>
+         <label for="p">message</label>
+        <input id="p" name="" value="" type="text" placeholder="enter your message" ><br><br>
+         <label for="mobile number">mobile number</label>
+        <input id="mobile number" name="" value="" type="tel" placeholder="enter your mobile number" ><br><br>
+        <p>select a gender</p>
+        <label for="male">male</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="female">female</label>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="oth">other</label>
+        <input id="oth" type="radio" name="gender" value="other"><br><br>
+        <label for=""></label>
+        </label><br><br>
+    <button type="submit">submit</button>
+    </fieldset>
+</form>
+</body>
